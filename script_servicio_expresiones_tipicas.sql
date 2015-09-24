@@ -1,6 +1,6 @@
 CREATE TABLE language (
-  code VARCHAR(2) NOT NULL COMMENT 'ISO 639-1 language code',
-  language VARCHAR(45) NOT NULL COMMENT 'Language name, in english',
+  code VARCHAR(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'ISO 639-1 language code',
+  language VARCHAR(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Language name, in english',
   PRIMARY KEY (code)  COMMENT 'Table primary key')
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
   
