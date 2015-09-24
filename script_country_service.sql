@@ -9,5 +9,5 @@ ALTER TABLE country ADD CONSTRAINT fk_language FOREIGN KEY (language) REFERENCES
 
 INSERT INTO country (name, standardCode, language) VALUES ('España', 'ES', 'es');
 INSERT INTO country (name, standardCode, language) VALUES ('Portugal', 'PT', 'pt');
-INSERT INTO country (name, standardCode, language) VALUES ('United Kingdom', 'UK', 'en');
+INSERT INTO country (name, standardCode, language) VALUES ('United Kingdom', 'GB', 'en');
 INSERT INTO country (name, standardCode, language) VALUES ('France', 'FR', 'fr');
