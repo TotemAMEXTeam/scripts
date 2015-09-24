@@ -6,3 +6,8 @@ CREATE TABLE country (
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ALTER TABLE country ADD CONSTRAINT fk_language FOREIGN KEY (language) REFERENCES language(code) ON DELETE CASCADE;
+
+INSERT INTO country (name, standardCode, language) VALUES ('España', 'ES', 'es');
+INSERT INTO country (name, standardCode, language) VALUES ('Portugal', 'PT', 'pt');
+INSERT INTO country (name, standardCode, language) VALUES ('United Kingdom', 'UK', 'en');
+INSERT INTO country (name, standardCode, language) VALUES ('France', 'FR', 'fr');
