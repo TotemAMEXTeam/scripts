@@ -1,18 +1,3 @@
-CREATE TABLE language (
-  code VARCHAR(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'ISO 639-1 language code',
-  language VARCHAR(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Language name, in english',
-  PRIMARY KEY (code)  COMMENT 'Table primary key')
-CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-  
-INSERT INTO language (code, language) values ('es', 'Spanish'); 
-INSERT INTO language (code, language) values ('en', 'English'); 
-INSERT INTO language (code, language) values ('fr', 'French'); 
-INSERT INTO language (code, language) values ('it', 'Italian'); 
-INSERT INTO language (code, language) values ('de', 'German'); 
-INSERT INTO language (code, language) values ('nl', 'Dutch'); 
-INSERT INTO language (code, language) values ('pt', 'Portuguese'); 
-INSERT INTO language (code, language) values ('ar', 'Arabic'); 
-
 CREATE TABLE language_expression (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'Numeric autoincremental id',
   origin_language VARCHAR(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Language code origin',
