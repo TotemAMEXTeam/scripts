@@ -14,10 +14,16 @@ CREATE INDEX i_origin_language ON language_expression(origin_language);
 CREATE INDEX i_destiny_language ON language_expression (destiny_language);
 
 INSERT INTO language_expression (origin_language, destiny_language, origin_expression, destiny_expression, explanation)
-	VALUES ('es','en','�Salud!','Cheers!','Para celebrar un brindis');
+	VALUES ('es','en','¡Salud!','Cheers!','Para celebrar un brindis');
 INSERT INTO language_expression (origin_language, destiny_language, origin_expression, destiny_expression, explanation)
-	VALUES ('es','en','�Guay!','Cool!','Para indicar agrado sobre algo');
+	VALUES ('es','en','¡Guay!','Cool!','Para indicar agrado sobre algo');
 INSERT INTO language_expression (origin_language, destiny_language, origin_expression, destiny_expression, explanation)
 	VALUES ('es','fr','Es lo que hay','C\'est la vie','Para indicar que hay que resignarse cuando ocurre algo');
 INSERT INTO language_expression (origin_language, destiny_language, origin_expression, destiny_expression, explanation)
-	VALUES ('es','fr','A mogoll�n','A gogo','Para expresar una cantidad enorme de algo');
+	VALUES ('es','fr','A mogollón','A gogo','Para expresar una cantidad enorme de algo');
+	
+INSERT INTO language_expression (origin_language, destiny_language, origin_expression, destiny_expression, explanation)
+	VALUES ('es','pt','¿Cuál es el nombre de esta calle?','Qual é o nome dessa rua?','Para preguntar por una calle');
+
+INSERT INTO language_expression (origin_language, destiny_language, origin_expression, destiny_expression, explanation)
+	VALUES ('es','pt','Perro ladrador, poco mordedor','Cachorro que late, não morde','Cuando alguien se queja mucho, pero no hace nada para remediarlo');
